@@ -58,7 +58,7 @@ params:
   socialIcons:
     - { name: "LinkedIn", url: "https://www.linkedin.com/in/hector-ballega/" }
     - { name: "Github", url: "https://github.com/hectorballega" }
-    - { name: "Twitter", url: "https://twitter.com/hectorba" }
+    - { name: "Twitter", url: "https://twitter.com/hectorballega" }
     # - {
     #     name: "Stackoverflow",
     #     url: "https://stackoverflow.com/users/6141173/hector-ballega",
