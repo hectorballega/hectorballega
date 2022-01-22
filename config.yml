@@ -1,0 +1,94 @@
+baseURL: "www.hectorballega.com"
+languageCode: "en-us"
+title: Héctor Bállega
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+googleAnalytics: UA-63248109-4
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+relativeURLS: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+paginate: 10
+paginatePath: blog
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  description: "DevOps Engineer"
+  author: Héctor Bállega
+  # author: ["Me", "You"] # multiple authors
+  ShowPostNavLinks: true
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowShareButtons: true
+  ShowReadingTime:
+    true
+    # disableSpecial1stPost: true
+  displayFullLangName: true
+  comments: true
+  images: ["me.png"]
+
+  profileMode:
+    enabled: true
+    title: "Héctor Bállega" # optional default will be site title
+    subtitle: "DevOps Engineer"
+    imageUrl: "me.png" # optional
+    imageTitle: "Héctor Bállega' profile picture" # optional
+    imageWidth: 150 # custom size
+    imageHeight: 150 # custom size
+
+    # buttons:
+    #   - { name: Blog, url: "/posts" }
+    #   - { name: About, url: "/about" }
+
+  socialIcons:
+    - { name: "LinkedIn", url: "https://www.linkedin.com/in/hector-ballega/" }
+    - { name: "Github", url: "https://github.com/hectorballega" }
+    - { name: "Twitter", url: "https://twitter.com/hectorba" }
+    # - {
+    #     name: "Stackoverflow",
+    #     url: "https://stackoverflow.com/users/6141173/hector-ballega",
+    #   }
+    # - { name: "Facebook", url: "https://facebook.com/hectorballega" }
+    # - { name: "Mastodon", url: "https://fosstodon.org/@hectorballega" }
+
+taxonomies:
+  category: categories
+  tag: tags
+
+menu:
+  main:
+    - identifier: aboutme
+      name: about me
+      url: /about
+      weight: 5
+    - identifier: resume
+      name: resume
+      url: resume.pdf
+      weight: 6
+    # - identifier: blog
+    #  name: blog
+    #  url: /posts
+    #  weight: 7
+    # - identifier: categories
+    #   name: categories
+    #   url: /categories/
+    #   weight: 10
+    # - identifier: tags
+    #   name: tags
+    #   url: /tags/
+    #   weight: 20
